@@ -1,3 +1,249 @@
-﻿body
-{
+﻿/*
+    Name: Jeffrey Massey
+    Date: 5/13/2024
+    Project: Resume // Final
+*/
+
+/*
+    Phone Version
+*/
+
+html {
+    font-family: Arial;
+}
+
+body{
+    background-color: black;
+}
+
+header {
+    text-align: center;
+    background-color: darkslateblue;
+    border-top-style: solid;
+    border-top-color: cornflowerblue;
+    border-bottom-style: solid;
+    border-bottom-color: cornflowerblue;
+    margin-top: 15px;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 10px;
+}
+
+nav {
+    display: flex;
+    margin-top: -15px;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: black;
+}
+
+.quietLink {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+article {
+    background-color: darkslateblue;
+    border-left-style: solid;
+    border-left-color: cornflowerblue;
+    border-right-style: solid;
+    border-right-color: cornflowerblue;
+    border-bottom-style: solid;
+    border-bottom-color: cornflowerblue;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-top: 20px;
+}
+
+.black {
+    color: darkslateblue;
+    border-right-style: solid;
+    border-right-color: cornflowerblue;
+    border-left-style: solid;
+    border-left-color: cornflowerblue;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+caption {
+    border-top: 1.5px solid cornflowerblue;
+    border-left: 1.5px solid cornflowerblue;
+    border-right: 1.5px solid cornflowerblue;
+}
+
+.black table, th, td {
+    border: 1.5px solid cornflowerblue;
+    border-collapse: collapse;
+}
+
+.blue {
+    background-color: darkslateblue;
+    border-style: solid;
+    border-color: cornflowerblue;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+#clean {
+    border-bottom-style: none;
+}
+
+form {
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+.label {
+    font-weight: bold;
+}
+
+.radList {
+    padding-left: 75px;
+}
+
+#margin {
+    text-align: center;
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+hr {
+    background-color: cornflowerblue;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid cornflowerblue;
+    margin: 1em 0;
+    padding: 0;
+}
+
+#home {
+    border-bottom-style: none;
+    padding-bottom: 20px;
+}
+
+#home p {
+    margin-left: 45px;
+    margin-right: 45px;
+    text-align: justify;
+}
+
+#away {
+    border-bottom-style: none;
+    padding-bottom: 20px;
+}
+
+.contact {
+    text-align: right;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#thankYou {
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+div img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+}
+
+#tinyScreen {
+    padding-top: 15px;
+}
+
+#vanishingCat {
+    display: none;
+}
+
+#invisiblePic {
+    display: none;
+}
+
+footer {
+    background-color: darkslateblue;
+    border-top-style: solid;
+    border-top-color: cornflowerblue;
+    text-align: center;
+    padding-bottom: 15px;
+    margin-top: 15px;
+    margin-bottom: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding-top: 10px;
+}
+
+.footNote {
+    margin-top: 0px;
+}
+
+#end {
+    margin-top: 0px;
+}
+
+/*
+    Desktop Version
+*/
+
+@media only screen and (min-width: 1220px){
+    #tinyScreen {
+        display: none;
+    }
+
+    #vanishingCat {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+        border-radius: 25px;
+        height: 150px;
+        width: 150px;
+    }
+    
+    #flex {
+        display: flex;
+        margin-left: 0px;
+        margin-right: 0px;
+        justify-content: center;
+    }
+
+    #invisiblePic {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+        border-radius: 25px;
+        height: 150px;
+        width: 150px;
+    }
 }

@@ -9,7 +9,7 @@
         Project: Resume // Final
     -->
     <meta charset="utf-8">
-    <title>Home Page</title>
+    <title>Web Resume</title>
     <link rel="stylesheet" href="styles.css">
 
 </head>
@@ -18,14 +18,16 @@
         <h1>
             Web Developement Portfolio!
         </h1>
-        <div class="navigation">
-            <a href="index.html">Home</a>
-            <a href="experience.html">Examples</a>
-            <a href="contact.html">Contact Me</a>
-        </div>
+        <nav>
+            <h4>
+                <a href="index.html">Home</a>
+                <a href="experience.html">Examples</a>
+                <a href="contact.html">Contact Me</a>
+            </h4>
+        </nav>
     </header>
 
-    <article>
+    <article id="home">
         <h2>
             About Me
         </h2>
@@ -37,23 +39,23 @@
             I have experience with web deisgn, and presumably you're in the market for someone with that experience. I have a strong preference for minimalistic asethetics. I perfer function over form, and my ethos can be described as 'Professional, but not Impersonal.'
         </p>
         <p>
-            For your Convience I have constructed a sampling of website elements I have experience utilizing on the aptly titled, '<a href="experience.html" class="quietLink">Examples</a>' page that you can review at your own discretion.
+            For your Convience I have constructed a sampling of website elements I have experience utilizing on the aptly titled, <a href="experience.html" class="quietLink">Examples</a> page that you can review at your own discretion.
         </p>
         <p>
-            If you're interested in working with me, the <a href="contact.html">Contact</a> page has all that relevent information.
+            If you're interested in working with me, the <a href="contact.html" class="quietLink">Contact</a> page has all that relevent information.
         </p>
 
-        <h3 id="thankYou">
+        <h3>
             Thank you for your time and attention!
         </h3>
         <p>
             Enjoy this picture of a cat, that will disappear if you try to zoom in on him, don't worry about it too much, he's just very shy.
         </p>
         
-        <img src="#" alt="Vanishing Cat">
+        <img src="sillyCat.webp" alt="Vanishing Cat" id="vanishingCat">
     </article>
 
-    <footer>
+    <footer class="footNote">
         Jeffrey Massey; May 13, 2024 &#169;
     </footer>
 </body>

@@ -9,7 +9,7 @@
         Project: Resume // Final
     -->
     <meta charset="utf-8">
-    <title>Home Page</title>
+    <title>Web Resume</title>
     <link rel="stylesheet" href="styles.css">
 
 </head>
@@ -18,53 +18,65 @@
         <h1>
             Web Developement Portfolio!
         </h1>
-        <div class="navigation">
-            <a href="index.html">Home</a>
-            <a href="experience.html">Examples</a>
-            <a href="contact.html">Contact Me</a>
-        </div>
+        <nav>
+            <h4>
+                <a href="index.html">Home</a>
+                <a href="experience.html">Examples</a>
+                <a href="contact.html">Contact Me</a>
+            </h4>
+        </nav>
     </header>
-    <article>
+    <article id="away">
         <h2>
             Contact Information
         </h2>
-        <div id="contactInfo">
-            <h3>
-                Phone
-            </h3>
-            <hr>
-            <p>
-                417-569-3940
-            </p>
-            <h3>
-                Email
-            </h3>
-            <p>
-                toddmassey90@gmail.com
-            </p>
-        </div>
         <hr>
-        <div id="lessEffective">
+        <h3>
+
+            Phone
+        </h3>
+        <p class="contact">
+            417-569-3940
+        </p>
+        <hr>
+        <h3>
+            Email
+        </h3>
+        <p class="contact">
+            toddmassey90@gmail.com
+        </p>
+        <hr>
+        <div>
             <h3>
                 Less Effective
             </h3>
-            <p>
-                Smokesignal
-                Telegram
-                Pony Express
-                Goding outside and shouting really loudly
-            </p>
+            <ul id="lessEffect">
+                <li>
+                    Smokesignal
+                </li>
+                <li>
+                    Telegram
+                </li>
+                <li>
+                    Pony Express
+                </li>
+                <li>
+                    Going outside and shouting really loudly
+                </li>
+            </ul>
         </div>
         <hr>
         <div>
-            <h4>
-                Thank you for your time and Consideration!
+            <h4 id="thankYou">
+                Thank again you for your time and Consideration!
                 Please Enjoy this funny Image, that will also be invisible to tiny tiny screens.
             </h4>
         </div>
+
+        <img src="sillyPic.jpg" alt="Funny Img" id="invisiblePic">
     </article>
-    <img src="#" alt="Funny Img">
-    <footer>
+
+    <footer class="footNote">
         Jeffrey Massey; May 13, 2024 &#169;
     </footer>
 </body>

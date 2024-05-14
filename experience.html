@@ -9,7 +9,7 @@
         Project: Resume // Final
     -->
     <meta charset="utf-8">
-    <title>Home Page</title>
+    <title>Web Resume</title>
     <link rel="stylesheet" href="styles.css">
 
 </head>
@@ -18,21 +18,23 @@
         <h1>
             Web Developement Portfolio!
         </h1>
-        <div class="navigation">
-            <a href="index.html">Home</a>
-            <a href="experience.html">Examples</a>
-            <a href="contact.html">Contact Me</a>
-        </div>
+        <nav>
+            <h4>
+                <a href="index.html">Home</a>
+                <a href="experience.html">Examples</a>
+                <a href="contact.html">Contact Me</a>
+            </h4>
+        </nav>
     </header>
+    <article>
+        <h2 id="example">
+            Examples
+        </h2>
 
-    <h2>
-        Examples
-    </h2>
-
-    <p>
-        Here in I present a sampling of skills I've acquired in my web dev class, including but not limited too;
-    </p>
-
+        <p>
+            Here in I present a sampling of skills I've acquired in my web dev class, including but not limited too;
+        </p>
+    </article>
     <div class="black">
         <!--
             Table Example
@@ -72,51 +74,92 @@
     </div>
     <div class="blue">
         <!--
-            Form Example
-        -->
+        Form Example
+    -->
         <h3>Forms! With Fancy things likes...</h3>
         <form>
-            <label>Text Inputs!</label>
+
+            <label class="label">Text Inputs!</label>
             <br>
-            <label>Name:</label>
-            <input type="text" name="name">
+            <ul>
+                <li>
+                    <label>Name:</label>
+                    <br>
+                    <input type="text" name="name" class="text">
+                </li>
+                <li>
+                    <label>Email:</label>
+                    <br>
+                    <input type="text" name="email" class="text">
+                </li>
+                <li>
+                    <label>A Third Thing:</label>
+                    <br>
+                    <input type="text" name="name" class="text">
+                </li>
+            </ul>
             <br>
-            <label>Email:</label>
-            <input type="text" name="email">
-            <label>A Third Thing:</label>
-            <input type="text" name="name">
+            <label class="label">Radial Inputs!</label>
+            <br>
+            <ul>
+                <li>
+                    <label>List your favorite number:</label>
+                    <br>
+                </li>
+                <li class="radList">
+                    <input type="radio" id="one" name="one" value="one">
+                    <label for="one">1</label>
+                </li>
+                <li class="radList">
+                    <input type="radio" name="two" value="two">
+                    <label for="one">2</label>
+                </li>
+                <li class="radList">
+                    <input type="radio" name="three" value="three">
+                    <label for="one">3</label>
+                </li>
+                <li class="radList">
+                    <input type="radio" name="seven" value="seven">
+                    <label for="one">7</label>
+                </li>
+                <li class="radList">
+                    <input type="radio" name="itsGot" value="itsGot">
+                    <label for="one">It's gotta be 7 right?'</label>
+                </li>
+            </ul>
+            <br>
+            <label class="label">Drop down Menu's!</label>
+            <ul>
+                <li>
+                    <label>Please indicate whichever option best describes how cool this is:</label>
+                </li>
+                <li class="radList">
+                    <select>
+                        <option value="0">Pretty Cool</option>
+                        <option value="1">Amazingly Cool</option>
+                        <option value="2">The Coolest</option>
+                        <option value="3">I fell down to my knees and wept the only tears I've ever shed at how cool this is.</option>
+                    </select>
+                </li>
+            </ul>
+
             <br>
             <br>
-            <label>Radial Inputs!</label>
+            <label class="label">And can't forget the submit button!</label>
             <br>
-            <label>List your favorite number!</label>
-            <input type="radio" name="one" value="one">
-            <label for="one">1</label>
-            <input type="radio" name="two" value="one">
-            <label for="one">2</label>
-            <input type="radio" name="three" value="one">
-            <label for="one">3</label>
-            <input type="radio" name="seven" value="one">
-            <label for="one">7</label>
-            <input type="radio" name="itsGot" value="one">
-            <label for="one">It's gotta be 7 right?'</label>
-            <br>
-            <br>
-            <label>Drop down Menu's!</label>
-            <br>
-            <label>Please indicate whichever option best describes how cool this is!</label>
-            <select>
-                <option value="0">Pretty Cool</option>
-                <option value="1">Amazingly Cool</option>
-                <option value="2">The Coolest</option>
-                <option value="3">I fell down to my knees and wept the only tears I've ever shed at how cool this is.'</option>
-            </select>
-            <br>
-            <br>
-            <label>And can't forget the submit button!</label>
-            <br>
-            <input type="submit" value="Submit" id="button" onclick=alert("And it works too!")>
+            <ul>
+                <li>
+                    <input type="submit" value="Submit" id="button" onclick="myFunction()">
+                </li>
+            </ul>
         </form>
+
+        <script>
+            function myFunction() {
+                alert("And it works too!");
+            }
+        </script>
+
     </div>
     <div class="black">
         <!--
@@ -124,22 +167,30 @@
         -->
         <h3>How to space things out to Look nice!</h3>
         <br>
-        <p>Which is why all this text isn't spready out to either end of the element like it's a wounded animal desperately trying to eat it's way out of a box!/p>
+        <p id="margin">
+            Which is why all this text isn't rammed out into either end of the element.
+            <br>
+            Like a wounded animal desperately trying to eat it's way out of a box!
+        </p>
     </div>
-    <div class="blue">
+    <div class="blue" id="clean">
         <!--
             3 Flexbox Images
         -->
-        <h3>& Also, amongst other things, how to make images line up all neat in a row like...</h3>
-        <img src="#" alt="This">
-        <img src="#" alt="And this!">
-        <img src="#" alt="This too!">
+        <h3>& also, how to arrange pictures to, amongst other things make all these guys march along all neat in a row like...</h3>
+        <br>
+        <br>
+        <div id="flex">
+            <img src="march.jpg" alt="This" id="first">
+            <img src="march.jpg" alt="And this!" id="second">
+            <img src="march.jpg" alt="This too!" id="third">
+        </div>
         <p id="tinyScreen">
-            Unless you have a tiny phone in which case they will all be stacked up on top of each, that's what we call 'flexible design'!
+            Unless you have a tiny phone in which case they'll be marching in a column! That's what we call 'flexible design'!
         </p>
     </div>
 
-    <footer>
+    <footer  id="end">
         Jeffrey Massey; May 13, 2024 &#169;
     </footer>
 </body>
